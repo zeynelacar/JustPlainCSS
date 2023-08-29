@@ -1,0 +1,82 @@
+:root{
+    --darkpurple:#161853;
+    --darklilac:#292C6D;
+    --brightpink:#EC255A;
+    --lightpink:#FAEDF0;
+    --brightpinkshadow:#ffffff
+}
+
+@font-face {
+    font-family: brandFont;
+    src: url('../fonts/dattermatter.ttf') format('truetype');
+    src: url('../fonts/dattermatter.woff') format('woff');
+}
+
+body{
+    background-color: var(--darklilac)/*7A9D54*/;
+}
+
+/*
+nav{
+    display: block;
+    margin: 0;
+    padding: 8px;
+}
+*/
+
+ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--darkpurple);
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    background-color: var(--darkpurple);
+    display: inline;
+    float: left;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #FAEDF0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover:not(.active){
+    background-color: #0f103c;
+}
+
+h1{
+    text-align: center;
+    font-family: brandFont;
+    font-style: oblique;
+    color: var(--brightpink);/*8C3333*//*B31312*/
+    font-size: 105px;
+}
+
+h2{
+    text-align: center;
+    font-family: brandFont;
+    font-style: normal;
+    color: var(--brightpink);/*8C3333*//*B31312*/
+    font-size: 50px;
+}
+
+p{
+    text-align: center;
+    font-size: 25px;
+    color: var(--lightpink);
+}
+
+.active {
+    background-color: #EC255A;
+  }
